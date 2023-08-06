@@ -228,7 +228,8 @@ bot.command('status', async (ctx) => {
 
 bot.command('chara', async (ctx) => {
   if (!isBotActive) return;
-  const query = ctx.message.text.replace('/chara ', '');
+  const text = ctx.message.text;
+  const query = text.split('/chara')[1].trim();
   const url = `https://lilyane.cyclic.app/api/animeimg?q=${query}`;
   if (!query) return ctx.reply('Masukan Query!!!')
 
