@@ -3,8 +3,8 @@ bot ini adalah example dari [lilyaneRestAPI](https://lilyane.cyclic.app)
 
 ## cara install 
 
-```
 sebelum menjalankan bot setting dulu token di /data/conf_data_bot.json
+```
 $ git clone https://github.com/Zeev-x/newBot
 $ cd newBot
 $ npm install
